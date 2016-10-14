@@ -26,7 +26,7 @@
 
 In this tutorial, you’ll learn how to perform basic operations on the Microsoft Azure File storage service. Through samples written in C++, you’ll learn how to create shares and directories, upload, list, and delete files. If you are new to Microsoft Azure’s File Storage service, going through the concepts in the sections that follow will be very helpful in understanding the samples.
 
-[AZURE.INCLUDE [storage-file-concepts-include](../../includes/storage-file-concepts-include.md)]
+AZURE.INCLUDE [storage-file-concepts-include](../../includes/storage-file-concepts-include.md)]
 
 [AZURE.INCLUDE [storage-create-account-include](../../includes/storage-create-account-include.md)]
 
@@ -81,7 +81,7 @@ Using the File storage client, you can then obtain a reference to a share.
 
 To create the share, use the **create_if_not_exists** method of the **cloud_file_share** object.
 
-	if (share. create_if_not_exists()) {	
+	if (share.create_if_not_exists()) {	
 		std::wcout << U("New share created") << std::endl;	
 	}
 
